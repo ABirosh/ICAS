@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.example.icas.integratedconcussionassessmentsystem.Pre_posture_questions">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text= "@string/Question"
+            android:textSize="20pt"
+            android:textAlignment = "textStart"
+            android:id="@+id/question"
+            android:layout_marginTop="50px"
+            android:layout_marginBottom="50px"
+            android:layout_marginLeft="100px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="50dp"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentStart="false"
+            android:orientation="vertical"
+            android:id="@+id/textInput"
+            android:layout_alignParentBottom="false"
+            android:gravity="left"
+            android:layout_marginLeft="100px">
+
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/Q1"
+                android:gravity="left"
+                android:visibility="visible">
+
+                <RadioButton
+                    android:text="RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/op1"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorPrimary"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:text="RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/op2"
+                    android:layout_weight="1"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:text="RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/op3"
+                    android:layout_weight="1"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:text="RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/op4"
+                    android:layout_weight="1"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:text="RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/op5"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textSize="18sp" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
